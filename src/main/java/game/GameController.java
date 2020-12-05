@@ -94,9 +94,7 @@ public class GameController {
     }
 
     public boolean isPossible() {
-        if (elementCounter('O') + 1 == elementCounter('X')
-                || elementCounter('X') + 1 == elementCounter('O')
-                    || elementCounter('X') == elementCounter('O')){
+        if (Math.abs(elementCounter('O') - elementCounter('X')) < 2){
             if ((checkWin('O') && checkWin('X')) == false) {
                 return true;
             }
