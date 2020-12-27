@@ -53,6 +53,14 @@ public class TestGameController {
     public void testWinConditionRowWorksForLastColumn(){
         GameController state = new GameController("OXXOOX_OX");
         assertTrue(state.winConditionColumn('X'));
+//        try{
+//            checkIfMoveLegal();
+//            fail("Should throw exception for gamestate");
+//        } catch (IllegalArgumentException x){
+//            assertEquals("szar a state", x.getMessage());
+//        }
+        //https://stackoverflow.com/questions/156503/how-do-you-assert-that-a-certain-exception-is-thrown-in-junit-4-tests
+
     }
 
     /**

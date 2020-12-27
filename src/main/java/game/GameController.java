@@ -11,6 +11,14 @@ public class GameController {
         }
     }
 
+    public char[][] getGameField() {
+        return gameField;
+    }
+
+    public void setGameField(char[][] gameField) {
+        this.gameField = gameField;
+    }
+
     public boolean winConditionDiagonal(char symbol){
 
         int diag1count = 0;
@@ -132,6 +140,10 @@ public class GameController {
 
 
         return result;
+    }
+
+    public void setField(int[] coordinates, char symbol){
+        gameField[coordinates[0]][coordinates[1]] = symbol;
     }
 
     public void printGameField() {
