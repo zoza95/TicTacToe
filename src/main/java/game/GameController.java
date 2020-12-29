@@ -111,7 +111,7 @@ public class GameController {
     }
 
     public boolean isDraw(){
-        if(elementCounter('_') == 0){
+        if(elementCounter(' ') == 0 && elementCounter('_') == 0){
             if(checkWin('O') == false && checkWin('X') == false){
                 return true;
             }
