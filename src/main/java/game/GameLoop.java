@@ -2,14 +2,13 @@ package game;
 
 public class GameLoop {
 
-    //String emptyField = "         ";
-    String emptyField = "_________";
-    char symbol = 'X';
-    int[] coordinates = new int[2];
+    private final String emptyField = "         ";
 
     public String runGame (){
         GameController gameController = new GameController(emptyField);
         IOHandler input = new IOHandler();
+        int[] coordinates = new int[2];
+        char symbol = 'X';
 
         /**
          * Stage 5/1. Prints an empty grid at the beginning of the game.
@@ -32,13 +31,9 @@ public class GameLoop {
             else symbol = 'X';
         } while(gameController.isFinished() == false);
 
-
         /**
          * Stage 5/3. Ends the game when someone wins or there is a draw.
          */
-
-
-
 
         return gameController.getGameStateDescription();
     }
