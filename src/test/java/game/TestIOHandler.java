@@ -96,8 +96,8 @@ public class TestIOHandler {
                 {'O', 'O', '_'},
                 {'O', 'X', '_'}
         }));
-        assertEquals("Enter the coordinates: " +
-                "This cell is occupied! Choose another one!" + System.lineSeparator(), testOutput.toString());
+        assertEquals("Enter the coordinates: This cell is occupied! Choose another one!" + System.lineSeparator() +
+                "Enter the coordinates: ", testOutput.toString());
     }
 
     @Test
@@ -112,8 +112,8 @@ public class TestIOHandler {
                 {'O', 'O', '_'},
                 {'O', 'X', '_'}
         }));
-        assertEquals("Enter the coordinates: " +
-                "This cell is occupied! Choose another one!" + System.lineSeparator(), testOutput.toString());
+        assertEquals("Enter the coordinates: This cell is occupied! Choose another one!" + System.lineSeparator() +
+                "Enter the coordinates: ", testOutput.toString());
     }
 
     @Test
@@ -128,11 +128,10 @@ public class TestIOHandler {
                 {'O', 'O', '_'},
                 {'O', 'X', '_'}
         }));
-        assertEquals("Enter the coordinates: " +
-                        "You should enter numbers!" + System.lineSeparator() +
-                        "You should enter numbers!" + System.lineSeparator() +
-                        "You should enter numbers!" + System.lineSeparator()
-                , testOutput.toString());
+        assertEquals("Enter the coordinates: You should enter numbers!" + System.lineSeparator() +
+                        "Enter the coordinates: You should enter numbers!" + System.lineSeparator() +
+                        "Enter the coordinates: You should enter numbers!" + System.lineSeparator() +
+                        "Enter the coordinates: ", testOutput.toString());
     }
 
     @Test
@@ -147,10 +146,9 @@ public class TestIOHandler {
                 {'O', 'O', '_'},
                 {'O', 'X', '_'}
         }));
-        assertEquals("Enter the coordinates: " +
-                        "You should enter numbers!" + System.lineSeparator() +
-                        "You should enter numbers!" + System.lineSeparator()
-                , testOutput.toString());
+        assertEquals("Enter the coordinates: You should enter numbers!" + System.lineSeparator() +
+                        "Enter the coordinates: You should enter numbers!" + System.lineSeparator() +
+                        "Enter the coordinates: ", testOutput.toString());
     }
 
     @Test
@@ -166,9 +164,10 @@ public class TestIOHandler {
                 {'O', 'X', '_'}
         }));
         assertEquals("Enter the coordinates: Coordinates should be from 1 to 3!" + System.lineSeparator() +
-                "Coordinates should be from 1 to 3!" + System.lineSeparator() +
-                "Coordinates should be from 1 to 3!" + System.lineSeparator() +
-                "Coordinates should be from 1 to 3!" + System.lineSeparator(), testOutput.toString());
+                "Enter the coordinates: Coordinates should be from 1 to 3!" + System.lineSeparator() +
+                "Enter the coordinates: Coordinates should be from 1 to 3!" + System.lineSeparator() +
+                "Enter the coordinates: Coordinates should be from 1 to 3!" + System.lineSeparator() +
+                "Enter the coordinates: ", testOutput.toString());
     }
 
     @Test
