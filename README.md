@@ -41,5 +41,7 @@ After building the project you can run the project like this:
 $ cd target/classes
 $ java game/Main.class
 ```
+## __Update__
 
+Adding new contributor (wenjaze) to the project for further development assistance.
 
